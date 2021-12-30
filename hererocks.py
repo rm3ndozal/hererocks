@@ -15,6 +15,9 @@ import tarfile
 import tempfile
 import zipfile
 import hashlib
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 try:
     from urllib import urlretrieve
